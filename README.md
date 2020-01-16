@@ -1,2 +1,0 @@
-# NewSite
-site novo
