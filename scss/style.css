@@ -10780,8 +10780,10 @@ body {
 
 .svg-1 {
   position: absolute;
-  bottom: 0;
+  bottom:0;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 @media (pointer: coarse) and (hover: none) {
@@ -10795,11 +10797,8 @@ body {
 
 .wall {
   background: #141E30;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-gradient(linear, left top, right top, from(#243B55), to(#141E30));
   background: linear-gradient(to right, #243B55, #141E30);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 0;
   height: 100vh;
   background-position: 50% 50%;
