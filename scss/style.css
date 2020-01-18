@@ -5,7 +5,6 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Kanit:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -10768,110 +10767,245 @@ a.text-dark:hover, a.text-dark:focus {
 
 html {
   scroll-behavior: smooth;
+  background: #0B0E1A;
 }
 
 * {
-  letter-spacing: 2px;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  font-family: 'Kanit', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
-.svg-1 {
-  position: absolute;
-  bottom:0;
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
   width: 100%;
-  margin: 0;
-  padding: 0;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  z-index: 1;
 }
 
 @media (pointer: coarse) and (hover: none) {
   header {
-    background: url("https://source.unsplash.com/XT5OInaElMw/1600x900") black no-repeat center center scroll;
+    background: url("../assets/wall.jpg") black no-repeat center center scroll;
   }
   header video {
     display: none;
   }
 }
 
-.wall {
-  background: #141E30;
-  background: -webkit-gradient(linear, left top, right top, from(#243B55), to(#141E30));
-  background: linear-gradient(to right, #243B55, #141E30);
-  padding: 0;
-  height: 100vh;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  color: white;
-}
-
-.hero1 {
-  background-color: #061324;
-  color: #fff;
-}
-
-a.button {
-  text-decoration: none;
-  color: #fff;
-  background: -webkit-gradient(linear, left top, right top, from(red), to(#ff5100));
-  background: linear-gradient(90deg, red 0%, #ff5100 100%);
-  margin-top: 15px;
-  margin-bottom: 15px;
-  padding: 10px 25px;
-  border-radius: 25px;
-}
-
 h1 {
-  font-size: 6vh;
-  font-weight: 900;
+  font-size: 3rem;
+  font-weight: 800;
+  padding: 0;
+  margin: 0;
 }
 
 h2 {
-  font-size: 4vh;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+span {
+  color: #ff6400;
   font-weight: 800;
 }
 
-.divisor {
-  width: 20%;
-  height: 10px;
+.title {
+  font-size: 8vw;
+  font-weight: 900;
+  color: #ff6400;
+}
+
+@media only screen and (max-width: 720px) {
+  .title {
+    font-size: 8vh;
+    color: #ff6400;
+  }
+}
+
+.wall {
+  background: -webkit-gradient(linear, left top, right top, from(#010311), to(rgba(0, 25, 59, 0.9))), url("../assets/wall.jpg");
+  background: linear-gradient(90deg, #010311 0%, rgba(0, 25, 59, 0.9) 100%), url("../assets/wall.jpg");
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.wall-2 {
+  background: -webkit-gradient(linear, left top, right top, from(#010311), to(rgba(0, 25, 59, 0.9))), url("../assets/wall.jpg");
+  background: linear-gradient(90deg, #010311 0%, rgba(0, 25, 59, 0.9) 100%), url("../assets/wall.jpg");
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+}
+
+.card-1 {
+  background: #141E30;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#243B55), to(#141E30));
+  background: linear-gradient(to bottom, #243B55, #141E30);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border-radius: 10px;
-  background: -webkit-gradient(linear, left top, right top, from(red), to(#ff5100));
-  background: linear-gradient(90deg, red 0%, #ff5100 100%);
-  margin: 20px 0;
 }
 
-.scale-up-center {
-  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.6, -0.38, 0.735, 0.045) 2s both;
-          animation: scale-up-center 0.4s cubic-bezier(0.6, -0.38, 0.735, 0.045) 2s both;
-}
-
-@-webkit-keyframes scale-up-center {
-  0% {
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-
-@keyframes scale-up-center {
-  0% {
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
+.divisor {
+  height: 5px;
+  width: 15%;
+  padding: 0;
+  margin: 10px 0;
+  background-color: #ff6400;
+  position: relative;
+  left: -20px;
 }
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+.slide-top {
+  -webkit-animation: slide-top 1.2s linear infinite alternate-reverse both;
+  animation: slide-top 1.2s linear infinite alternate-reverse both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+}
+
+.heartbeat {
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
 }
 /*# sourceMappingURL=style.css.map */
