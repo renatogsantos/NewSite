@@ -10846,7 +10846,10 @@ h2 {
 }
 
 span {
-  color: #ff6400;
+  background: red;
+  background: linear-gradient(45deg, red 0%, #ff6400 50%, #ff8500 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: 800;
 }
 
@@ -10904,7 +10907,8 @@ span {
   width: 15%;
   padding: 0;
   margin: 10px 0;
-  background-color: #ff6400;
+  background: red;
+  background: linear-gradient(45deg, red 0%, #ff6400 50%, #ff8500 100%);
   position: relative;
   left: -20px;
 }
@@ -10913,10 +10917,20 @@ span {
   text-decoration: none;
   color: #fff;
   padding: 10px 25px;
-  background: #ff6400;
+  background: red;
+  background: linear-gradient(45deg, #ff6400 0%, #ff8500 100%);
   border-radius: 50px;
   -webkit-box-shadow: 0px 10px 15px #ff660080;
           box-shadow: 0px 10px 15px #ff660080;
+}
+
+.button-1 {
+  text-decoration: none;
+  color: #868686;
+  padding: 10px 25px;
+  border: 2px solid #868686;
+  border-radius: 50px;
+  font-weight: 600;
 }
 
 .nav-item {
