@@ -10980,6 +10980,7 @@ span {
   border-radius: 50%;
   width: 80px;
   margin-bottom: 25px;
+  border: 3px solid #ff6400;
 }
 
 .social-icon {
