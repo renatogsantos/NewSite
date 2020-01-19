@@ -10917,6 +10917,7 @@ span {
   text-decoration: none;
   color: #fff;
   padding: 10px 25px;
+  margin: 10px 0;
   background: #ff8500;
   background: linear-gradient(45deg, #ff5000 0%, #ff8500 100%);
   border-radius: 50px;
@@ -10928,6 +10929,7 @@ span {
   text-decoration: none;
   color: #fff;
   padding: 10px 25px;
+  margin: 10px 0;
   background: #ff8500;
   background: linear-gradient(45deg, #ff8500 0%, #ff5000 100%);
   border-radius: 50px;
@@ -10939,6 +10941,7 @@ span {
   text-decoration: none;
   color: #868686;
   padding: 10px 25px;
+  margin: 10px 0;
   border: 2px solid #868686;
   border-radius: 50px;
   font-weight: 600;
@@ -10951,6 +10954,7 @@ span {
   color: #fff;
   background-color: #868686;
   padding: 10px 25px;
+  margin: 10px 0;
   border: 2px solid #868686;
   border-radius: 50px;
   font-weight: 600;
@@ -10969,6 +10973,18 @@ span {
   background: -webkit-gradient(linear, left top, right top, color-stop(bottom, to), color-stop(#243B55), to(#141E30));
   background: linear-gradient(90deg, to bottom, #243B55, #141E30);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-bottom: 3px solid #ff6400;
+}
+
+.perfil {
+  border-radius: 50%;
+  width: 80px;
+  margin-bottom: 25px;
+}
+
+.social-icon {
+  width: 25px;
+  margin: 0px 10px;
 }
 
 ::-webkit-scrollbar {
