@@ -10917,8 +10917,19 @@ span {
   text-decoration: none;
   color: #fff;
   padding: 10px 25px;
-  background: red;
-  background: linear-gradient(45deg, #ff6400 0%, #ff8500 100%);
+  background: #ff8500;
+  background: linear-gradient(45deg, #ff5000 0%, #ff8500 100%);
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 10px 15px #ff660080;
+          box-shadow: 0px 10px 15px #ff660080;
+}
+
+.button:hover {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 25px;
+  background: #ff8500;
+  background: linear-gradient(45deg, #ff8500 0%, #ff5000 100%);
   border-radius: 50px;
   -webkit-box-shadow: 0px 10px 15px #ff660080;
           box-shadow: 0px 10px 15px #ff660080;
@@ -10931,6 +10942,20 @@ span {
   border: 2px solid #868686;
   border-radius: 50px;
   font-weight: 600;
+  -webkit-box-shadow: 0px 10px 15px #00000025;
+          box-shadow: 0px 10px 15px #00000025;
+}
+
+.button-1:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: #868686;
+  padding: 10px 25px;
+  border: 2px solid #868686;
+  border-radius: 50px;
+  font-weight: 600;
+  -webkit-box-shadow: 0px 10px 15px #00000025;
+          box-shadow: 0px 10px 15px #00000025;
 }
 
 .nav-item {
