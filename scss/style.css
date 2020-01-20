@@ -10967,6 +10967,12 @@ span {
 }
 
 .bg-navbar {
+  border-bottom: 3px solid #ff6400;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
+}
+
+.bg-navbar-scroll {
   background: #141E30;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
@@ -10974,6 +10980,8 @@ span {
   background: linear-gradient(90deg, to bottom, #243B55, #141E30);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border-bottom: 3px solid #ff6400;
+  -webkit-transition: ease 0.5s;
+  transition: ease 0.5s;
 }
 
 .perfil {
