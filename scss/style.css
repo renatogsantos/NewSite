@@ -10866,9 +10866,16 @@ span {
   }
 }
 
+.wall-svg {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .wall {
-  background: -webkit-gradient(linear, left top, right top, from(#010311), to(rgba(0, 25, 59, 0.9))), url("../assets/wall.jpg");
-  background: linear-gradient(90deg, #010311 0%, rgba(0, 25, 59, 0.9) 100%), url("../assets/wall.jpg");
+  background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0.9)));
+  background: linear-gradient(90deg, white 0%, rgba(255, 255, 255, 0.9) 100%);
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
@@ -10967,7 +10974,7 @@ span {
 }
 
 .bg-navbar {
-  border-bottom: 3px solid #ff6400;
+  background: rgba(20, 30, 48, 0.5);
   -webkit-transition: ease 0.5s;
   transition: ease 0.5s;
 }

@@ -10601,7 +10601,7 @@ return jQuery;
 //navbar on scroll
 $(document).ready(function(){
 	$(window).scroll(function(){
-		if($(window).scrollTop()>300){
+		if($(window).scrollTop()>80){
 			$('nav').addClass('bg-navbar-scroll');
 		} else {
 			$('nav').removeClass('bg-navbar-scroll');
